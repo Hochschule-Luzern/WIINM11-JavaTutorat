@@ -17,7 +17,7 @@ Einführung und Installation Java Umgebung.
     * Grundsätlich egal
     * Unsere Empfehlung: [Atom](https://atom.io/)
 * PowerShell einrichten
-    * [Registry - Rechtsklick öffnen](PowerShell-PowerUp/templates/Registry/Open PowerShell Here.reg) Datei als irgednwas.reg speichern und doppelklicken.
+    * [Registry - Rechtsklick öffnen](PowerShell-PowerUp/templates/Registry/Open PowerShell Here.reg) Datei als irgendwas.reg speichern und doppelklicken.
     * PowerShell als Administrator starten: `Set-ExecutionPolicy Unrestricted`
 
 ### Java Workflow
