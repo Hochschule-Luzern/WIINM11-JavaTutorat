@@ -1,9 +1,13 @@
-# Links
+# Week 1
+
+Einführung und Installation Java Umgebung.
+
+### Links
 
 * https://github.com/Hochschule-Luzern/About
 * http://www.gailer-net.de/tutorials/java/java-toc.html
 
-# Java Installation
+### Java Installation
 
 * Java installieren 
     * [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -16,7 +20,7 @@
     * [Registry - Rechtsklick öffnen](PowerShell-PowerUp/templates/Registry/Open PowerShell Here.reg) Datei als irgednwas.reg speichern und doppelklicken.
     * PowerShell als Administrator starten: `Set-ExecutionPolicy Unrestricted`
 
-# Java Workflow
+### Java Workflow
 
 * Aufgabe Ordner erstellen.
 * Mit Editor Verzeichnis öffnen.
@@ -26,7 +30,7 @@
 * PowerShell in Verzeichnis starten.
 * ``run.bat` in PowerShell ausführen.
 
-# Tipps
+### Tipps
 
 * Geduld und Ausdauer.
 * Aufgaben lösen.
