@@ -31,3 +31,4 @@
 * Geduld und Ausdauer.
 * Aufgaben lösen.
 * Nicht unterschätzen.
+* Bei Problemen: https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/issues
