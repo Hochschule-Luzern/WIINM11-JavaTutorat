@@ -18,3 +18,14 @@ In einem ersten Schritt identifiziert man die Egenschaften (Properties) und Meth
 ![](Crane.png)
 
 Diese Informationen werden dann als Java Klasse implementiert.
+
+Ablage: */ConstructionSite/src/*
+
+Klasse: [JavaTutorat/Crane.java](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/ConstructionSite/src/JavaTutorat/Crane.java)
+
+# Zusatzaufgabe
+
+1. Erstellen Klasse Calculator
+2. Definieren und implementieren mathematische Algorithmen
+3. Entscheiden Implementation Main Klasse oder Selbstaufruf.
+4. Implementation der Kommandozeilenoptionen
