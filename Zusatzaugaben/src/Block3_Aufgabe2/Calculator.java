@@ -1,4 +1,4 @@
-package Block3_Aufgabe1;
+package Block3_Aufgabe2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,32 +6,29 @@ import java.util.List;
 public class Calculator {
 	
 	public static void main(String[] args){
-		int zahl1 = 17;
-		int zahl2 = 24;
+		String option = args[0];
+		int zahl = Integer.parseInt(args[1]);
 		
-		if(isPrim(zahl1)){
-			System.out.println("Zahl: " + zahl1 + " ist eine Primzahl.");
-		}else{
-			
-			System.out.println("Keine Primzahl");
-			System.out.println("Primfaktoren: ");
-			List<Integer> list = primeFactors(zahl1);
-			for(Integer i : list){
-				System.out.println(i);
-			}
-		}
+		switch(option){
 		
-		if(isPrim(zahl2)){
-			
-			System.out.println("Zahl: " + zahl2 + " ist eine Primzahl.");
-		}else{
-			System.out.println("Keine Primzahl");
-			System.out.println("Primfaktoren: ");
-			List<Integer> list = primeFactors(zahl2);
-			for(Integer i : list){
-				System.out.println(i);
+			case "-p" : {
+				if(isPrim(zahl)){
+					System.out.println("Zahl: " + zahl + " ist eine Primzahl.");
+				}else{
+					
+					System.out.println("Keine Primzahl");
+				}
 			}
+			
+			case "-f" : {
+				List<Integer> list = primeFactors(zahl);
+				for(Integer i : list){
+					System.out.println(i);
+				}
+			}
+		
 		}
+	
 	}
 	
 	public static boolean isPrim(int zahl){
