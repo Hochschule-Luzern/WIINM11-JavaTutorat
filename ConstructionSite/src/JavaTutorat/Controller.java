@@ -22,7 +22,7 @@ public class Controller {
 		
 		// Build the trucks
 		Truck truck1 = new Truck("lkw1", 3000);
-		Truck truck2 = new Truck();
+		//Truck truck2 = new Truck();
 		Truck truck3 = new Truck("lkw3", 5500);
 		
 		crane1.setRange(10);

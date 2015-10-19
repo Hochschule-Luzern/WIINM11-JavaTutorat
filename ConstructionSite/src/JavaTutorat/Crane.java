@@ -122,20 +122,20 @@ public class Crane {
 	/* Methods */
 	
 	public void liftUp(int range){
-		System.out.println("Truck was lifted up for+ " + range + " m.");
+		System.out.println("Truck was lifted up for " + range + " m.");
 		
 	}
 
 	public void liftDown(int range){
-		System.out.println("Truck was lifted down for + " + range + " m.");
+		System.out.println("Truck was lifted down for " + range + " m.");
 	}
 	
 	public void moveForward(int range){
-		System.out.println("Crane chop was moved forward for+ " + range + " m");
+		System.out.println("Crane chop was moved forward for " + range + " m");
 	}
 	
 	public void moveBackward(int range){
-		System.out.println("Crane chop was moved backward for+ " + range + " m");
+		System.out.println("Crane chop was moved backward for " + range + " m");
 	}
 	
 	public void turnLeft(int degrees){
