@@ -32,4 +32,4 @@ Vorgehen:
   * lift down
   * release
 
-![](Crane.png)
+![](Crane2.png)
