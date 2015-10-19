@@ -1,14 +1,17 @@
-# WIINM11-JavaTutorat
-Ressourcen für Java Tutorat
+# Einführung OOP
 
-# Unterricht
+Mit einer Software möchte man ein Problem lösen.
 
-* [Week 1](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week1.md) - Einführung und Installation Java Umgebung.
-* [Week 2](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week2.md) - Block 02
-* [Week 3](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week3.md) - Klassen und Methoden
-* [Week 4](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week4.md) - Nachbearbeitung
+Unser Ziel: Kransteuerung
 
+Objektorientiertes Programmieren verfolgt den Ansatz Objekte der Wirklichkeit in Modelle zu abstrahieren (vereinfachen). Das Werkzeug zur Beschreibung dieser Abstraktion ist die Programmiersprache.
 
-# Kontakt
+Unser Beispiel: Kran
 
-Bei Problemen auf GitHub ein Issue erstellen (erfordert GitHub Account): https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/issues
+In einem ersten Schritt identifiziert man die Egenschaften (Properties) und Methoden (Methods) des darzustellenden Objekts.
+
+![](Crane.png)
+
+Diese Informationen werden dann als Java Klasse implementiert.
+
+Ablage: */ConstructionSite/src/*
