@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+C:\OneDrive\Shared\GitHub\WIINM11-JavaTutorat\.metadata\.plugins\org.eclipse.jdt.core
+2801696956.index
+2998227661.index
+3174493202.index
+766619635.index
