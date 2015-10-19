@@ -14,7 +14,7 @@ public class Crane {
 	private int range;
 	private int rotation;
 	
-	private Truck truck;
+	private Truck truck = null;
 	
 	/* Constructors */
 	
@@ -122,28 +122,28 @@ public class Crane {
 	/* Methods */
 	
 	public void liftUp(int range){
+		System.out.println("Truck was lifted up for+ " + range + " m.");
 		
 	}
 
 	public void liftDown(int range){
-		
+		System.out.println("Truck was lifted down for + " + range + " m.");
 	}
 	
 	public void moveForward(int range){
-	
+		System.out.println("Crane chop was moved forward for+ " + range + " m");
 	}
 	
 	public void moveBackward(int range){
-		
+		System.out.println("Crane chop was moved backward for+ " + range + " m");
 	}
 	
 	public void turnLeft(int degrees){
-		
+		System.out.println("Crane was turned left for " + degrees + " degree ");
 	}
 	
 	public void turnRight(int degrees){
-		
-	}
+		System.out.println("Crane was turned left for " + degrees + " degree ");	}
 	
 	public void attach(Truck truck){
 		if(truck.getWeight() > maxWeight){
