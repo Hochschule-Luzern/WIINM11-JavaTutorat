@@ -11,10 +11,6 @@ public class Kalender {
 			for(int m=0;m<kalender[j].length;m++){
 				
 			}
-			
 		}
-		
-		
 	}
-
 }
