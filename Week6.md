@@ -1,7 +1,6 @@
 # Review
 
 * Abstrakte Klassen/ Methoden
-* Interfaces
 * static, final, public, private
   * Zugriffsrechte S.276
 
