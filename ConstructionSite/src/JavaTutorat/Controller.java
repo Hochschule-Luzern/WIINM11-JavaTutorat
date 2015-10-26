@@ -9,7 +9,8 @@ public class Controller {
 		
 		// Let's build a crane
 		
-
+		Crane crane = new Crane();
+		crane
 	}
 
 }

@@ -36,6 +36,7 @@ public class Student {
 									 // Ein Konstruktor "INITIALISIERT" ein Objekt mit Werten
 									 // hier wird z.B. die Klassenvariable "zaehler" um eins erhöht!
 
+	
 
 	/** 2. Konstruktor, bei dem sich das Geburtsjahr setzen laesst. */
 	public Student(int geburtsjahr) {
@@ -43,6 +44,12 @@ public class Student {
 		this.geburtsjahr = geburtsjahr;
 	}
 
+	public Student(String name, int nummer, int fach, int geburtsjahr) {
+		this(geburtsjahr);
+		this.name = name;
+		this.nummer = nummer;
+		this.fach = fach;
+	}
 	/** 
 	 * Erzeugt ein neues Studentenobjekt 
 	 */
@@ -55,9 +62,7 @@ public class Student {
 	 */
 	public static Student createStudent(int jahr) {
 		return new Student(jahr);
-	}
-	
-	
+	}	
 	
 	public int getFach() {
 	return fach;

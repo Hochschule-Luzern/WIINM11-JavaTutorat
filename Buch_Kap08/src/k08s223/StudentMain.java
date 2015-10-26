@@ -16,6 +16,8 @@ public class StudentMain {
 		System.out.println("Output: " + studi1);
 		System.out.println("Output: " + Student.PHANTOM);
 		System.out.println("Anzahl erzeugter Studierende: " + Student.getZaehler());
+		
+		Student studi = new Student("stu", 1, 0, 3);
 			
 	}
 }
