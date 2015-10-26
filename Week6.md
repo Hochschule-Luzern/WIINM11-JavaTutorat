@@ -18,6 +18,8 @@
 * Definition der Klassen Person, Customer, Employee
 * Optional: Interfaces
 
+http://www.scalingbits.com/java/javakurs1/vererbung/java
+
 # Stack and Heap
 
 ![](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/images/stack_heap.jpg)

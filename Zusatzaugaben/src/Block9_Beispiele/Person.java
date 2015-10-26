@@ -25,8 +25,8 @@ public class Person {
 		firstName = fn;
 	}
 
-	// Methoden
-	public String fullName() {
+	// nicht überschreibbare Methode
+	public final String fullName() {
 		return (firstName + " " + name);
 	}
 }
