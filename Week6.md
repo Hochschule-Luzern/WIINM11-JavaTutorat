@@ -20,4 +20,4 @@ Ein einfaches Beispiel
 
 # Stack and Heap
 
-![](/images/stack_heap.jpg)
+![](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/images/stack_heap.jpg)
