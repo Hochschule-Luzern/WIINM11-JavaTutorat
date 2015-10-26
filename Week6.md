@@ -11,7 +11,7 @@
 
 # Vererbung
 
-Ein einfaches Beispiel
+[Ein einfaches Beispiel](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/tree/master/Zusatzaugaben/src/Block9_Beispiele)
 * Vererbung Allgemein
 * Methodenvererbung
 * Zugriffsrechte Variablen
