@@ -33,7 +33,7 @@ public class App {
        // Ausgabe mit Klassenmethode
        // Funktioniert nicht, weil die Person Klasse, diese Methoden nicht kennt.
        
-       // Ausgabe mit Klassenmethode
+       // Ausgabe mit Superklassenmethode
        System.out.println(p1.fullName());
        System.out.println(p2.fullName());
         
