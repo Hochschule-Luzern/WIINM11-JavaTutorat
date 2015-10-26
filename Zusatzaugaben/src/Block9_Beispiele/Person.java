@@ -6,7 +6,8 @@ public class Person {
 	private String name;
 	private String firstName;
 	public int age;
-
+	protected int birthyear;
+	
 	// Konstruktor
 	public Person(String ln, String fn) {
 		name = ln;
@@ -17,10 +18,7 @@ public class Person {
 	public Person() {
 		this("Doe", "John");
 	}
-	
-	// Abstrakte Methoden
-	//public abstract printAll();
-	
+		
 	// Getter Setter
 	public void setName(String ln, String fn) {
 		name = ln;
@@ -29,6 +27,6 @@ public class Person {
 
 	// Methoden
 	public String fullName() {
-		return (name + " " + firstName);
+		return (firstName + " " + name);
 	}
 }

@@ -6,9 +6,17 @@ public class Employee extends Person implements Speek{
 	private String employeeId;
 	
 	// Konstruktor
-	public Employee(String ln, String fn, String EmpId, int a) {
+	public Employee(String ln, String fn, int birthyear, String EmpId, int a) {
+		// Zugriff auf name und fistname nicht möglich, bzw. nur über Konstruktuor und öffentliche Methoden möglich.
 		super(ln, fn); // Java ruft hier den Konstruktor der Oberklasse auf
+		
+		// Zugriff auf geschützte Instanzvariable
+		this.birthyear = birthyear;
+		
+		// Zugriff auf eigene Instanzvariable
 		employeeId = EmpId;
+		
+		// Zugriff auf öffentliche Instanzvariable
 		age = a;
 	}
 

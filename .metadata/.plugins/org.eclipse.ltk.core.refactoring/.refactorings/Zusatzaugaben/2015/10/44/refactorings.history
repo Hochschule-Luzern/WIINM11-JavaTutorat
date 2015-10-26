@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Block9_Beispiele.Customer&apos; to &apos;AbstractCustomer&apos;&#x0D;&#x0A;- Original project: &apos;Zusatzaugaben&apos;&#x0D;&#x0A;- Original element: &apos;Block9_Beispiele.Customer&apos;&#x0D;&#x0A;- Renamed element: &apos;Block9_Beispiele.AbstractCustomer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Customer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Block9_Beispiele{Customer.java[Customer" matchStrategy="1" name="AbstractCustomer" qualified="false" references="true" similarDeclarations="false" stamp="1445849644099" textual="false" version="1.0"/>
+</session>
