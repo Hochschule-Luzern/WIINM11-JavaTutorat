@@ -9,6 +9,7 @@ Ressourcen für Java Tutorat
 * [Week 4](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week4.md) - Nachbearbeitung
 * [Week 5](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week5.md) - Klassenvariablen und Methoden
 * [Week 6](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week6.md) - Repetition Vererbung
+* [Week 7](https://github.com/Hochschule-Luzern/WIINM11-JavaTutorat/blob/master/Week6.md) - Vorbereitung Zwischenprüfung
 
 # Kontakt
 
