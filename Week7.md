@@ -107,8 +107,7 @@ public class RefIntKlasse {
 	}
 }
 public class KlassenTest {
-  public RefIntKlasse q;
-	public static void copy1(RefIntKlasse f, RefIntKlasse g) {
+  public static void copy1(RefIntKlasse f, RefIntKlasse g) {
 		g.x.a = f.x.a;
 		g.y = f.y;
 	}
