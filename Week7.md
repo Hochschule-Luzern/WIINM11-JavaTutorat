@@ -159,6 +159,4 @@ Welches Bild würde sich ergeben, wenn unmittelbar vor //***
 
 stehen würde? Zeichnen Sie die Referenzen und Werte nach der Kopieraktion.
 
-### Lösungen
-
-[Lösungen](Week7_Keys.md)
+### [Lösungen](Week7_Keys.md)
