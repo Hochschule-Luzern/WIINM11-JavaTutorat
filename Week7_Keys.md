@@ -137,6 +137,6 @@ public class Student {
 
 ![](/images/Aufgabe6_Szenario3.png)
 
-**Szenario 3**
+**Szenario 4**
 
-![](/images/Aufgabe6_Szenario3.png)
+![](/images/Aufgabe6_Szenario4.png)
