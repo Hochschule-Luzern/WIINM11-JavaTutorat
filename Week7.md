@@ -21,16 +21,14 @@ public class StockHandler {
 
 Markiere folgende Blöcke im Code:
 
-* Klassenkopf
-* Klassenkörper
-* Methodenkopf
-* Methodenkörper
+* Sichtbarkeitsmodifizierer
+* Rückgabetyp
+* Methodensignatur
+* Parameterliste
 
 ```
-public class StockHandler {
-	public void execute() {
-		System.out.println("Hallo")
-	}
+public boolean addProduct(Product prod, int number)  {
+	// Implementierung
 }
 ```
 
