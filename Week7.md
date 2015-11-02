@@ -143,7 +143,7 @@ Welches Bild würde sich ergeben, wenn unmittelbar vor //***
 
 stehen würde? Zeichnen Sie den Zustand inklusive der Referenzen und Werte nach der Kopieraktion.
 
-** Szenario 3**
+**Szenario 3**
 
 Welches Bild würde sich ergeben, wenn unmittelbar vor //***
 
