@@ -158,3 +158,7 @@ Welches Bild würde sich ergeben, wenn unmittelbar vor //***
     copy3(q,p);
 
 stehen würde? Zeichnen Sie die Referenzen und Werte nach der Kopieraktion.
+
+### Lösungen
+
+[Lösungen](Week7_Keys.md)

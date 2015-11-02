@@ -140,7 +140,3 @@ public class Student {
 **Szenario 3**
 
 ![](/images/Aufgabe6_Szenario3.png)
-
-### Lösungen
-
-[Lösungen](Week7_Keys.md)
