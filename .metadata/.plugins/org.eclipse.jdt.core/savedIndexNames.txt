@@ -1,6 +1,5 @@
 INDEX VERSION 1.127+C:\OneDrive\Shared\GitHub\WIINM11-JavaTutorat\.metadata\.plugins\org.eclipse.jdt.core
 1521917797.index
-2801696956.index
 3616180831.index
 2557634897.index
 144572530.index
@@ -10,15 +9,13 @@ INDEX VERSION 1.127+C:\OneDrive\Shared\GitHub\WIINM11-JavaTutorat\.metadata\.plu
 568897961.index
 3988822264.index
 1791709537.index
-2998227661.index
 3152152696.index
 1827669085.index
 4003084442.index
 3020317496.index
 2634110937.index
+1505655309.index
 3438167942.index
-3174493202.index
 36278597.index
-766619635.index
 3882240654.index
 2477091700.index

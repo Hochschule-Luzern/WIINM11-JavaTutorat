@@ -75,7 +75,7 @@ public class main {
 
 ### Aufgabe 4 - Theorie (5 min)
 
-1. Was ist ein Objekt? Nenne dazu die 3 wichtigen Merkmale eines Objekts.
+1. Was ist ein Objekt? Nenne dazu die 3 wichtigen Merkmale eines Objekts.
 2. Was ist Vererbung?
 3. Unterschied Klasse – Objekt?
 
