@@ -7,4 +7,4 @@
 # Aufgaben
 
 * 10.2 (Buch s. 303)
-* 
+* 10.3 (Buch s. 307)
