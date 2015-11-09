@@ -7,8 +7,9 @@ public class LiesAusDatei_3 {
 	// darstellt. Ist dies der Fall, wird eine Exception geworfen.
 	public static void check(int z) {
 		if (z >= '0' && z <= '9') {
-			DigitException de = new DigitException();
+			DigitException de = new DigitException("test");
 			throw de;
+			throw new DigitException();
 		}
 	}
 	public static void main(String[] args) {

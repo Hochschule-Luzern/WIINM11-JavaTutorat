@@ -9,10 +9,12 @@ public class Exueb3 {
 		try {
 			while (true) {
 				int c=f.read();
+				
 				if (c<0)
 					return;
 				System.out.print((char)c);
 			}
+			
 		}
 		catch(FileNotFoundException e) {}
 		catch(IOException e) {}
