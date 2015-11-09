@@ -1,0 +1,35 @@
+Flanagan - Exception - Handling 
+
+Versuchen Sie herauszufinden, (OHNE zuerst das Sie 
+das Programm laufen lassen)  was die folgende Anwendung 	
+auf der Console ausgibt. Folgende 7 Test sollen durchgeführt 	
+werden:
+	
+1. Start der Anwendung mit keinem Argument	
+2. Start der Anwendung mit dem Argument: "eins"	
+3. Start der Anwendung mit dem Argument: 0	
+4. Start der Anwendung mit dem Argument: 1	
+5. Start der Anwendung mit dem Argument: 2	
+6. Start der Anwendung mit dem Argument: 3	
+7. Start der Anwendung mit dem Argument:. 99	
+
+
+Etwas detaillierte beschrieben: 
+Test 1: Sie starten das Programm im Kopf d.h.
+        Sie spielen Compiler und überlegen was wird
+        ausgegeben, wenn Sie "kein Argument" d.h. nichts übergeben
+
+	Wenn Sie wissen was ausgegeben wird (oder vermuten),
+        dann schauen Sie mit Eclipse nach, ob ihre
+        Vermutung korrekt gewesen ist.
+
+Test 2: Sie übergeben das Argument "eins"...
+        upps...wissen Sie wie man in Eclipse ein Argument
+        übergibt? Wenn NEIN - => SOFORT Assistent oder Dozent fragen !!  ;-) !!!
+        Sie spielen Compiler und überlegen was wird
+        ausgegeben, wenn Sie "eins" übergeben.
+
+	Wenn Sie wissen was ausgegeben wird (oder vermuten),
+        dann schauen Sie mit Eclipse nach, ob ihre
+        Vermutung korrekt gewesen ist.
+Test 3: usw. !!!

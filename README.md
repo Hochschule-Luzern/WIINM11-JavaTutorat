@@ -10,6 +10,7 @@ Ressourcen für Java Tutorat
 * [Week 5](Week5.md) - Klassenvariablen und Methoden
 * [Week 6](Week6.md) - Repetition Vererbung
 * [Week 7](Week7.md) - Vorbereitung Zwischenprüfung ([PDF Version](Week7.pdf))
+* [Week 8](Week8.md) - Exceptions
 
 # Kontakt
 
