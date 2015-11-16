@@ -1,0 +1,106 @@
+Lösungsvorschlag zu Aufgabe 11.7 (Version 3.0)
+(c) 2001-2011 D. Ratz, J. Scheffler, D. Seese, J. Wiesenberger
+Zeile 40: 
+  Konzert konzert2 = new Konzert(roadie2,roadie2,roadie3);
+
+Diese Zeile ist falsch, da 
+  roadie2 = new Roadie<Performer>()
+
+sich nicht in 
+  Roadie<? extends Zuschauer>
+
+umwandeln lässt. Die Klasse 
+  Performer
+
+ist keine Subklasse der Klasse 
+  Zuschauer
+
+(und eben dies wird fuer das erste Konstruktor-Element verlangt). 
+
+
+Zeile 44: 
+  Konzert konzert6 = new Konzert(roadie6,roadie2,roadie3);
+
+Diese Zeile entspricht einem Konstruktor-Aufruf mit den Typen 
+  Konzert(
+    Roadie<Person>,
+    Roadie<Performer>,
+    Roadie<HuebschesGroupie>).
+
+Die genaue geforderte Signatur des Konstruktors ist 
+  Konzert(
+    Roadie<? extends Zuschauer> vorderEingang,
+    Roadie<? super Star> hinterEingang,
+    Roadie<? extends Groupie> backstage
+
+Es gilt: 
+  Performer
+
+ist eine Superklasse von 
+  Star
+
+und 
+  HuebschesGroupie
+
+ist eine Unterklasse von 
+  Groupie
+
+- somit sind hier die Anforderungen erfüllt. Die Klasse 
+  Person
+
+ist aber keine Unterklasse von 
+  Zuschauer
+
+- somit ist das erste Argument des Konstruktors nicht gültig. 
+
+
+Zeile 46: 
+  Konzert besondersLax = new Konzert(roadie7,roadie7,roadie7);
+
+Wer in dieser Zeile einen Fehler gefunden hat, dem sei versichert, dass dem nicht so ist (zumindest nicht zur Compilierzeit). Die Instanz 
+  roadie7
+
+wurde als "roher" Typ 
+  new Roadie()
+
+erzeugt; der Übersetzer hat somit keine Informationen bezüglich seiner Spezialisierung. Der Compiler lässt den Programmierer hier gewähren und wird lediglich eine Warnung anzeigen. 
+
+
+In der Aufgabe wurde spezifiziert, dass "durch den Hintereingang nur Bühnenpersonal (Performer) und der Star des Abends gelassen werden" soll. Unsere Klasse 
+  Konzert
+
+definiert für den Hintereingang jedoch einen Roadie wie folgt: 
+  private Roadie<? super Star> hinterEingang;
+
+Gemäß unserer aktuellen Klassenhierarchie könnten wir hierfür die folgenden Roadies definieren: 
+  Roadie<Star>
+  Roadie<Performer>
+  Roadie<Person>
+
+Aber: 
+  Roadie<Object>
+
+ist nicht möglich, da die Klasse als 
+  Roadie<T extends Person>
+
+definiert ist. 
+Im Falle der Klasse 
+  Roadie<Performer>
+
+hätten wir unser Ziel erreicht: nur Performers und der Star des Abends werden eingelassen. Die Ausprägung 
+  Roadie<Star>
+
+wäre zu exklusiv: Performer hätten keinerlei Zutritt, da sie sich nicht von Star ableiten. 
+  Roadie<Person>
+
+wiederum wäre zu lax: in diesem Fall hätte jede Person (also auch normale Zuschauer oder Groupies) Einlass. 
+Die Lösung des Problems ist, in diesem Fall auf Wildcards zu verzichten. Der Konstruktor sollte in 
+  Konzert(
+    Roadie<? extends Zuschauer> vorderEingang,
+    Roadie<Performer> hinterEingang,
+    Roadie<? extends Groupie> backstage)
+
+geändert werden. 
+
+
+PS: Von diesem konzeptionellen Fehler abgesehen ist es üblicherweise kein gutes Design, "Zugangsrechte" über eine Klassenhierarchie abzubilden. Derartige Rechte sind naturgemäß dynamisch und ändern sich oftmals über die Zeit. Beispiel: der Star des Abends hat eines seiner Groupies geheiratet. Wenn der Star das Konzerthaus durch den Hintereingang betreten will und der Roadie diesem speziellen Groupie den Eintritt verweigert, kann dies schwerwiegende Folgen für den Konzertveranstalter haben. 

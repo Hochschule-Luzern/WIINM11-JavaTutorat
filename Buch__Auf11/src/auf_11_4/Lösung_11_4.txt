@@ -1,0 +1,53 @@
+Lösungsvorschlag zu Aufgabe 11.4 (Version 3.0)
+(c) 2001-2011 D. Ratz, J. Scheffler, D. Seese, J. Wiesenberger
+Hinweis: Sie können die nachfolgenden Erklärungen nachvollziehen, indem Sie das beiligende Programm TierKaefigTest übersetzen. 
+
+
+Variante 1: 
+  TierKaefig<Tier> kaefig = new TierKaefig<Katze>();
+
+Diese Zeile ist nicht compilierbar, da zwar die Klasse 
+  Katze
+
+von der Klasse 
+  Tier
+
+erbt, aber für die Klassen 
+  TierKaefig<Katze>
+
+und 
+  TierKaefig<Tier>
+
+keine solche Erbschaftsbeziehung vorliegt. Daher kann ein Objekt vom Typ Katzenkäfig nicht einer Variablen vom Typ Tierkäfig zugewiesen werden. 
+
+
+Variante 2: 
+  TierKaefig<Hund> kaefig = new TierKaefig<Tier>();
+
+Diese Zeile ist ebenfalls nicht compilierbar, da die generischen Typen 
+  Hund
+
+und 
+  Tier
+
+nicht übereinstimmen. 
+
+
+Variante 3: 
+  TierKaefig<?> kaefig = new TierKaefig<Katze>();
+  kaefig.setInsasse(new Katze());
+
+Die erste Zeile kann problemlos übersetzt werden, aber die zweite Zeile erzeugt einen Compilierfehler. Zwar haben wir unser Objekt als einen 
+  TierKaefig<Katze>
+
+erzeugt, doch habe wir es einer Variable des Typen 
+  TierKaefig<?>
+
+zugewiesen. Der Übersetzer kann nicht mit Bestimmtheit wissen, dass der Käfig tatsächlich Tiere der Art Katze halten kann. 
+
+
+Variante 4: 
+  TierKaefig kaefig = new TierKaefig();
+  kaefig.setInsasse(new Hund());
+
+Dieser Code kann zwar übersetzt werden, aber es wird eine Warnung wegen mangelnder Typsicherheit ausgegeben. 

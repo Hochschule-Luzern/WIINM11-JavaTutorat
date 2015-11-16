@@ -1,0 +1,54 @@
+Lösungsvorschlag zu Aufgabe 11.5 (Version 3.0)
+(c) 2001-2011 D. Ratz, J. Scheffler, D. Seese, J. Wiesenberger
+
+
+
+Variante 1: 
+
+Die Ausgabe des Programmes in seiner unveränderten Form lautet 
+  Unbekannt: Amoebe
+  Tier: Katze
+  Haustier: Hauskatze
+  Tier: Wildkatze
+
+
+
+
+Variante 2: 
+
+Aktivieren wir nun die folgende Methode: 
+  public static void gibAus(Object tier) {
+    System.out.println("Objekt: " + tier);
+  }
+
+In diesem Falle erhalten wir einen Compilierfehler. Der Grund liegt in der Auslöschung von generischen Typen. Der Übersetzer ist nicht in der Lage, zwischen 
+  public static void gibAus(Object tier)
+
+und 
+  public static <T> void gibAus(T tier)
+
+zu unterscheiden. 
+
+
+Variante 3: 
+
+Aktivieren wir stattdessen die folgende Methode: 
+  public static void gibAus(Katze tier) {
+    System.out.println("Katze: " + tier);    
+  }
+
+In diesem Falle erhalten wir ebenfalls einen Compilierfehler, jedoch aus einem anderen Grund. In unserem Hauptprogramm lesen wir die Zeile 
+  gibAus(new Hauskatze());
+
+Dieser Code könnte sowohl von 
+  public static <T extends Haustier> void gibAus(T tier)
+
+als auch 
+  public static void gibAus(Katze tier)
+
+erfüllt werden. Hauskatze ist ein direktes Kind sowohl der Klasse Katze als auch des Interfaces Haustier; der Übersetzer kann sich deshalb nicht entscheiden. Wir können dies durch eine explizite Typumwandlung beheben: 
+  gibAus((Katze) new Hauskatze());
+
+
+
+

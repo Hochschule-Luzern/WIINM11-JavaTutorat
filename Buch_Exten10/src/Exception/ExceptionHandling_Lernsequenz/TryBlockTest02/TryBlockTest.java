@@ -38,7 +38,7 @@ public class TryBlockTest
     {
       System.out.println("Index-out-of-bounds exception caught in main()");
     }
-
+    
     System.out.println("Outside first try block in main()");
     System.out.println("\nPress Enter to exit");
 
