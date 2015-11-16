@@ -52,4 +52,4 @@ Enumeratoren
 
 Generische Datentypen
 * 11.4 S. 342 - Guter Einstieg
-* 11.6 S. 343 -
+* 11.6 S. 343 - Comparator und Generics
