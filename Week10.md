@@ -1,12 +1,11 @@
-# Steams
+# Linked List
 
-Input- und Outputstreams
+List, Lists, Lists
 
 # Ziele
 
-* Kennen und Anwender der verschiedenen Streamklassen
-* try-with-resources anwenden
+* ...
 
 # Aufgaben
 
-* 
+* ...
