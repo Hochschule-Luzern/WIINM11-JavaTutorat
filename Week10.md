@@ -9,7 +9,7 @@ List, Lists, Lists
 
 # Übersicht
 
-Collection Framework
+Collection Framework: http://www.torsten-horn.de/techdocs/java-collections.htm
 
 ![](CollectionsFramework.png)
 
