@@ -79,16 +79,21 @@ public class LinkedList {
 			 * wenn erst ein Objekt in der Liste ist, muss ein neuer tail
 			 * erzeugt werden
 			 */
-// to do!!!		
-			System.out.println("insertLast() müssen Sie selber programmieren!!!!");
+			Node newNode = new Node(x);
+			tail = newNode;
+			head.setNext(newNode);
+			length++;
+			
 		} else {
 			/*
 			 * wenn bereits mehr als ein Objekt in der liste vorhanden ist,
 			 * erzeuge ein neues objekt tail und setze beim altenTail.next auf
 			 * den neuen Tail
 			 */
-// to do!!!		
-			System.out.println("insertLast() müssen Sie selber programmieren!!!!");
+			Node newNode = new Node(x);
+			tail.setNext(newNode);
+			tail = newNode;
+			length++;
 		}
 	}
 
@@ -99,9 +104,10 @@ public class LinkedList {
 	 */
 	public Object removeFirst() {
 		
-// to do!!!		
-		System.out.println("removeFirst() müssen Sie selber programmieren!!!!");
-		return null;
+		Node delete = head;
+		head = head.getNext();
+		length--;
+		return delete.info;
 	}
 
 	/**
@@ -110,9 +116,10 @@ public class LinkedList {
 	 * @param x
 	 */
 	public void removeLast() {
-		
-// to do!!		
-		System.out.println("removeLast() müssen Sie selber programmieren!!!!");
+		Node zweitletzer = getObject(length-1);
+		zweitletzer.setNext(null);
+		tail = zweitletzer;
+		length--;
 	}
 
 	
@@ -129,20 +136,21 @@ public class LinkedList {
 			 * werden die Variablen prevNode und hilf im selben Loop abgefüllt
 			 */
 			Node prevNode;
-			Node newNode;
+			Node newNode = new Node(x);
 			Node hilf = head;
 			prevNode = head;
 			for (int i = 0; i < index; i++) {
+				// Node vor newNode
 				prevNode = hilf;
+				
+				// Node nach newNode
 				hilf = hilf.getNext();
 			}
-			newNode = new Node(x);
 			newNode.setNext(hilf);
 			prevNode.setNext(newNode);
 			length++;
 		} else {
-			System.out
-					.println("Improvisiertes exception handling: Index ist grösse als die Liste");
+			System.out.println("Index grösser als Länge Liste!");
 		}
 	}
 
@@ -227,7 +235,11 @@ public class LinkedList {
 		Node hilf = head;
 		while (hilf != null) {
 			System.out.print("Info-Value: " + hilf.getInfo() + "; ");
-			System.out.println("Next-Referce: " + hilf.getNext());
+			if(!(hilf.getNext() == null))
+			{System.out.println("Next-Referce: " + hilf.getNext().info);
+			}else{
+				System.out.println("Next-Referce: " + "Null");
+			}
 			// Gehe auf den nächsten Datensatz
 			hilf = hilf.getNext();
 		}
@@ -241,9 +253,23 @@ public class LinkedList {
 	 * Kehrt die Liste um (wenn die Liste nicht leer ist)
 	 */
 	public void reverseList() {
-// to do!!		
-		
-		System.out.println("reversList müssen Sie selber programmieren!!!!");
+		if(!isEmpty()){
+			
+			for(int i = length; i >=0; i--){
+				if(i > 0){
+					getObject(i).setNext(getObject(i-1));
+				}else{
+					getObject(i).next = null;
+				}
+			}
+			
+			Node newHead = tail;
+			tail = head;
+			head = newHead;
+			
+			
+			
+		}
 	}
 
 }
