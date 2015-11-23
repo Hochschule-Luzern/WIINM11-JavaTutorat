@@ -12,6 +12,7 @@ Ressourcen für Java Tutorat
 * [Week 7](Week7.md) - Vorbereitung Zwischenprüfung ([PDF Version](Week7.pdf))
 * [Week 8](Week8.md) - Exceptions
 * [Week 9](Week9.md) - Generics
+* [Week 10](Week10.md) - Streams
 
 # Kontakt
 
