@@ -1,0 +1,45 @@
+Lösungsvorschlag zu Aufgabe 11.6 (Version 3.0)
+(c) 2001-2011 D. Ratz, J. Scheffler, D. Seese, J. Wiesenberger
+
+
+
+Teilaufgabe a: 
+
+Die Ausgabe des Programmes in seiner unveränderten Form lautet 
+  Ausgabe: false true 
+  Ausgabe: du hallo schoene welt 
+
+Die Methode tueWas ist ein einfaches Sortierverfahren, dass sich auf beliebige Objekte von Klassen anwenden lässt, die das Interface Comparable implementieren. Die Methode tueWas kann eine Sequenz beliebiger Objekte ausgeben. 
+
+
+Teilaufgabe b: 
+
+Die Warnungen des Übersetzers stammen von zwei Quellen. Beginnen wir mit 
+  public static <T extends Comparable> T[] tueWas(T... eingabe)
+
+Das Interface Comparable hat einen generischen Parameter, dessen Typ der Klasse entspricht, die das Interface implementiert. Würden wir eine solche Klasse schreiben, sie würde also etwa wie folgt deklariert: 
+  public class Sortierbar implements Comparable<Sortierbar>
+
+Dies müssen wir in unserem Code berücksichtigen, da Comparable ohne Parameter einem rohen Datentyp entspricht. Die Lösung sieht wie folgt aus: 
+  public static <T extends Comparable<T>> T[] tueWas(T... eingabe)
+
+
+Das zweite Problem liegt in der Zeile 
+  public static void ausgabe(Object[] eingabe) {
+
+Normalerweise funktioniert dies wunderbar, aber ein Aufruf in der Form 
+  ausgabe(tueWas(new String[]{"welt","hallo"}));
+
+verwirrt den Compiler. Soll der Rueckgabewert von tueWas als ein Feld von T betrachtet werden, oder ist der Wert vom Typ T[] ein einzelner varargs Parameter? Wir können dies auf zwei Arten beheben. Entweder verwenden wir eine explizite Typenumwandlung: 
+  ausgabe((Object[]) tueWas(Boolean.TRUE,Boolean.FALSE));
+  ausgabe((Object[]) tueWas("welt","schoene","du","hallo"));
+
+oder wir machen unsere Methode ausgabe ebenfalls generisch: 
+  public static <T> void ausgabe(T... eingabe)
+
+
+
+
+Teilaufgabe c: 
+
+Die Lösung zu dieser Aufgabe befindet sich in der Datei RateMal_1_4.java. 

@@ -15,6 +15,7 @@ Ressourcen für Java Tutorat
 * [Week 10](Week10.md) - Linked List
 * [Week 11](Week11.md) - Streams
 * [Week 12](Week12.md) - JavaFX
+* [Week 13](Week13.md) - Final Lesson
 
 # Kontakt
 
